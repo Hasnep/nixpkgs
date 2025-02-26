@@ -8415,6 +8415,8 @@ self: super: with self; {
 
   llm-mistral = callPackage ../development/python-modules/llm-mistral { };
 
+  llm-mlx = callPackage ../development/python-modules/llm-mlx { };
+
   llm-ollama = callPackage ../development/python-modules/llm-ollama { };
 
   llm-openai-plugin = callPackage ../development/python-modules/llm-openai-plugin { };
