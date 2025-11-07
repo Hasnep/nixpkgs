@@ -1,0 +1,42 @@
+{
+  lib,
+  buildPythonPackage,
+  fetchPypi,
+  cargo,
+  rustPlatform,
+  rustc,
+}:
+
+buildPythonPackage rec {
+  pname = "componentize-py";
+  version = "0.19.1";
+  pyproject = true;
+
+  src = fetchPypi {
+    pname = "componentize_py";
+    inherit version;
+    hash = "sha256-A5MZ3L1T2B+SZcVOfBSnyMjTrbP7txJAJZFrw2yI9Jk=";
+  };
+
+  cargoDeps = rustPlatform.importCargoLock {
+    lockFile = ./Cargo.lock;
+  };
+
+  build-system = [
+    cargo
+    rustPlatform.cargoSetupHook
+    rustPlatform.maturinBuildHook
+    rustc
+  ];
+
+  pythonImportsCheck = [
+    "componentize_py"
+  ];
+
+  meta = {
+    description = "Tool to package Python applications as WebAssembly components";
+    homepage = "https://pypi.org/project/componentize-py";
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ ];
+  };
+}

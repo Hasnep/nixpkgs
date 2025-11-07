@@ -3102,6 +3102,8 @@ self: super: with self; {
 
   complycube = callPackage ../development/python-modules/complycube { };
 
+componentize-py = callPackage ../development/python-modules/componentize-py {};
+
   compreffor = callPackage ../development/python-modules/compreffor { };
 
   compressai = callPackage ../development/python-modules/compressai { };
@@ -5574,6 +5576,8 @@ self: super: with self; {
   fitparse = callPackage ../development/python-modules/fitparse { };
 
   fivem-api = callPackage ../development/python-modules/fivem-api { };
+
+  fixedint = callPackage ../development/python-modules/fixedint {};
 
   fixerio = callPackage ../development/python-modules/fixerio { };
 
@@ -15378,6 +15382,8 @@ self: super: with self; {
 
   pytest-pylint = callPackage ../development/python-modules/pytest-pylint { };
 
+    pytest-pyodide = callPackage ../development/python-modules/pytest-pyodide { };
+
   pytest-pytestrail = callPackage ../development/python-modules/pytest-pytestrail { };
 
   pytest-qt = callPackage ../development/python-modules/pytest-qt { };
@@ -20913,6 +20919,8 @@ self: super: with self; {
     ;
 
   wasmerPackages = lib.recurseIntoAttrs (callPackage ../development/python-modules/wasmer { });
+
+wasmtime = callPackage ../development/python-modules/wasmtime { };
 
   wasserstein = callPackage ../development/python-modules/wasserstein { };
 
