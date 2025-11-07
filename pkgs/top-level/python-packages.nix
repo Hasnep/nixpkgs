@@ -5639,6 +5639,8 @@ self: super: with self; {
 
   fivem-api = callPackage ../development/python-modules/fivem-api { };
 
+  fixedint = callPackage ../development/python-modules/fixedint {};
+
   fixerio = callPackage ../development/python-modules/fixerio { };
 
   fixtures = callPackage ../development/python-modules/fixtures { };
@@ -15563,6 +15565,8 @@ self: super: with self; {
 
   pytest-pylint = callPackage ../development/python-modules/pytest-pylint { };
 
+    pytest-pyodide = callPackage ../development/python-modules/pytest-pyodide { };
+
   pytest-pytestrail = callPackage ../development/python-modules/pytest-pytestrail { };
 
   pytest-qt = callPackage ../development/python-modules/pytest-qt { };
@@ -21185,6 +21189,8 @@ self: super: with self; {
     ;
 
   wasmerPackages = lib.recurseIntoAttrs (callPackage ../development/python-modules/wasmer { });
+
+wasmtime = callPackage ../development/python-modules/wasmtime { };
 
   wasmtime = callPackage ../development/python-modules/wasmtime { };
 
