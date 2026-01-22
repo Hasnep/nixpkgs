@@ -5975,6 +5975,8 @@ self: super: with self; {
 
   forecast-solar = callPackage ../development/python-modules/forecast-solar { };
 
+  format-currency = callPackage ../development/python-modules/format-currency { };
+
   formatron = callPackage ../development/python-modules/formatron { };
 
   formbox = callPackage ../development/python-modules/formbox { };
@@ -19664,6 +19666,8 @@ self: super: with self; {
   textual-autocomplete = callPackage ../development/python-modules/textual-autocomplete { };
 
   textual-dev = callPackage ../development/python-modules/textual-dev { };
+
+  textual-diff-view = callPackage ../development/python-modules/textual-diff-view { };
 
   textual-fastdatatable = callPackage ../development/python-modules/textual-fastdatatable { };
 
