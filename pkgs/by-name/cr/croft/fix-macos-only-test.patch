@@ -1,0 +1,12 @@
+diff --git a/src/app/tests.rs b/src/app/tests.rs
+index 6291b8c..0047e32 100644
+--- a/src/app/tests.rs
++++ b/src/app/tests.rs
+@@ -1887,6 +1887,7 @@ fn double_click_in_diff_selects_word_and_cmd_c_copies_it() {
+ }
+ 
+ #[test]
++#[cfg(target_os = "macos")]
+ fn lock_clipboard_for_test_restores_prior_clipboard_text_on_drop() {
+     // Tests that hit the real NSPasteboard must never leave their
+     // sentinels behind. This test simulates a user already having
