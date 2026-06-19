@@ -1024,6 +1024,8 @@ self: super: with self; {
 
   art = callPackage ../development/python-modules/art { };
 
+  artifact-parser = callPackage ../development/python-modules/artifact-parser { };
+
   arviz = callPackage ../development/python-modules/arviz { };
 
   arviz-base = callPackage ../development/python-modules/arviz-base { };
@@ -3745,6 +3747,8 @@ self: super: with self; {
   dbt-semantic-interfaces = callPackage ../development/python-modules/dbt-semantic-interfaces { };
 
   dbt-snowflake = callPackage ../development/python-modules/dbt-snowflake { };
+
+  dbterd = callPackage ../development/python-modules/dbterd { };
 
   dbus-client-gen = callPackage ../development/python-modules/dbus-client-gen { };
 
